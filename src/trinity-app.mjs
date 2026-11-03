@@ -52,7 +52,7 @@ $('reset').addEventListener('click', () => {
   state = freshState(); current = { title: 'This wall has two addresses.', story: 'The crew arrives at StarChucks on Walbash Avenue. Behind the unfinished drywall, someone is knocking from a room that the blueprints insist does not exist.', byline: 'MANDATORY SITE INSPECTION' }; save(); render();
 });
 document.addEventListener('keydown', ev => {
-  if (ev.ctrlKey || ev.metaKey || ev.altKey || ev.repeat || ev.target?.matches('input,textarea,select,[contenteditable]')) return;
+  if (ev.ctrlKey || ev.metaKey || ev.altKey || ev.repeat || ev.target?.matches?.('input,textarea,select,[contenteditable]')) return;
   const index = Number(ev.key) - 1;
   if (!Number.isInteger(index) || index < 0 || index > 3) return;
   const b = document.querySelector('[data-act="' + STEPS[index] + '"]');
