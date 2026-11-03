@@ -9,6 +9,15 @@
 - [x] Node built-in tests and GitHub Actions checks.
 - [ ] Manual browser acceptance on desktop, phone, and Quest browser after merge.
 
+## Companion episode: The Walbash Avenue Job (PR #1 addendum)
+
+- [x] Larry, Tweedsie and Mavis character bible with complementary builder/explorer/equalizer roles and coherent limits.
+- [x] Standalone, offline-playable StarChucks construction incident with character dialogue and four required actions.
+- [x] Two outcomes, lasting magical cost, dedicated versioned local save, independent reset, keyboard/touch controls.
+- [x] Tests for step ordering, invalid saves, replay protection and both endings.
+- [ ] Manual smoke test on desktop, mobile and Quest browser after merge.
+- [ ] Any cross-repository TweedleVerse bridge requires separate review and opt-in; do not imply it is implemented.
+
 ## Rung 1: The Crossroads proper
 - Multi-room transit concourse and a first complete investigation chain.
 - Character conversations with meaningful choices, not text dumps.

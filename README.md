@@ -16,6 +16,15 @@ Open `index.html` in a modern browser or host these static files on GitHub Pages
 - Use **Journal** to review findings or **New Arrival** to reset this game's save only.
 - Reduced-motion system preferences are respected. The interface needs no sound.
 
+## Play: Larry, Tweedsie & Mavis — The Walbash Avenue Job
+
+Open **[The Walbash Avenue Job](./trinity.html)** for a second, independent offline-playable story. Talk with the three contractors, investigate the dimensional wall at StarChucks (108 Walbash Avenue), follow the work-order sequence, and decide whether to seal the breach or preserve a monitored doorway. Your case file persists in **its own** browser save key; Episode 001 progress stays untouched. No external assets or network calls are required.
+
+- Inspect the site (1), send Tweedsie to scout (2), let Larry brace the split (3), and ask Mavis to stabilize it at a real cost (4).
+- Talk to Larry, Tweedsie or Mavis at any point for original character dialogue.
+- Choose one of two distinct endings; use **New Work Order** to restart only this episode.
+- See [The Unlicensed Trinity's character and story bible](docs/TRINITY.md). The possible TweedleVerse connection is a *proposal*, not an installed integration.
+
 ## Design boundaries
 
 - **This is a first playable vertical slice**, not a production-ready engine or a completed twelve-realm campaign.
@@ -32,7 +41,9 @@ Open `index.html` in a modern browser or host these static files on GitHub Pages
 - `docs/REALMS.md`: twelve provisional realms and their gameplay identities.
 - `docs/ROADMAP.md`: staged plan and acceptance criteria.
 - `docs/INTEGRATION_CONTRACT.md`: optional, non-breaking game links.
-- `tests/engine.test.mjs`: Node built-in test runner.
+- `tests/engine.test.mjs`, `tests/trinity.test.mjs`: Node built-in test runner.
+- `trinity.html`, `trinity.css`, `src/trinity-app.mjs`, `src/trinity-story.mjs`: independent playable maintenance episode.
+- `docs/TRINITY.md`: crew, character constraints, magic consequences and crossover boundaries.
 
 Run automated checks with Node.js 20 or later:
 
