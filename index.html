@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c101b">
+  <meta name="description" content="An Unscheduled Arrival: a mysterious, offline-playable browser adventure in the Department of Everything.">
+  <title>Elsewhere Engine | An Unscheduled Arrival</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#case-report">Skip to investigation</a>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">Φ</span><div><span class="brand-eyebrow">Φ369 LABS · ORIGINAL FICTION</span><strong>ELSEWHERE<span class="brand-accent">ENGINE</span></strong></div></div>
+      <div class="topbar-actions"><span class="system-status"><i aria-hidden="true"></i> SYSTEM ONLINE / DIRECTOR UNKNOWN</span><button id="journal-toggle" class="nav-button" type="button" aria-controls="journal" aria-expanded="false">Journal <span id="journal-count">0/3</span></button><button id="reset-button" class="nav-button secondary" type="button">New Arrival</button></div>
+    </header>
+    <main class="main-layout">
+      <section class="mission-heading" aria-labelledby="mission-title"><div class="eyebrow">EPISODE 001 <span aria-hidden="true">/</span> DEPARTMENT OF EVERYTHING <span aria-hidden="true">/</span> INTAKE</div><h1 id="mission-title">An Unscheduled <em>Arrival</em></h1><p>There is no record of your arrival. Unfortunately, there is a record of your departure.</p></section>
+      <div class="mission-layout">
+        <section class="scene-wrap" aria-label="Reception hall explorable scene">
+          <div class="scene-bar"><span><span class="diamond" aria-hidden="true">◆</span> THE CROSSROADS <span class="scene-muted">/ FLOOR ?</span></span><span id="scene-phase">ARRIVAL UNREGISTERED</span></div>
+          <div class="scene" id="scene">
+            <div class="scene-stars" aria-hidden="true"></div>
+            <div class="back-wall" aria-hidden="true"></div>
+            <div class="ceiling-light ceiling-light-one" aria-hidden="true"></div><div class="ceiling-light ceiling-light-two" aria-hidden="true"></div>
+            <div class="world-lettering" aria-hidden="true"><span>D.O.E.</span><small>ALL DEPARTURES ARE FINAL<br>ALL ARRIVALS ARE SUBJECT TO REVIEW</small></div>
+            <div class="wall-panels" aria-hidden="true"></div>
+            <div class="floor" aria-hidden="true"></div>
+            <div class="scene-object directory" aria-hidden="true"><span class="directory-line"></span><span class="directory-line"></span><span class="directory-line"></span><span class="directory-line"></span></div>
+            <div class="scene-object clock" aria-hidden="true"><span class="clock-hands"></span></div>
+            <div class="scene-object reception" aria-hidden="true"><span class="reception-window">NEXT</span><span class="reception-counter"></span></div>
+            <div class="scene-object tube" aria-hidden="true"><span class="tube-inner"></span></div>
+            <div class="scene-object elevator" id="elevator-art" aria-hidden="true"><span class="elevator-top">13</span><span class="elevator-split"></span><span class="elevator-warning">RESTRICTED</span></div>
+            <div class="floor-glow" aria-hidden="true"></div>
+            <button class="hotspot hotspot-directory" data-hotspot="directory" type="button" aria-label="1: Inspect the directory"><span class="hotspot-key">1</span><span>DIRECTORY</span></button>
+            <button class="hotspot hotspot-clock" data-hotspot="clock" type="button" aria-label="2: Inspect the clock"><span class="hotspot-key">2</span><span>CLOCK</span></button>
+            <button class="hotspot hotspot-desk" data-hotspot="desk" type="button" aria-label="3: Speak to reception"><span class="hotspot-key">3</span><span>RECEPTION</span></button>
+            <button class="hotspot hotspot-tube" data-hotspot="tube" type="button" aria-label="4: Inspect the pneumatic tube"><span class="hotspot-key">4</span><span>TUBE SYSTEM</span></button>
+            <button class="hotspot hotspot-elevator" data-hotspot="elevator" type="button" aria-label="5: Inspect Elevator 13"><span class="hotspot-key">5</span><span>ELEVATOR 13</span></button>
+          </div>
+          <div class="scene-footer"><span>SELECT AN OBJECT <span class="footer-separator">·</span> OR PRESS 1–5</span><span>NO NETWORK REQUIRED <span class="pulse" aria-hidden="true">●</span></span></div>
+        </section>
+        <section class="case-panel" id="case-report" aria-labelledby="case-heading">
+          <div class="panel-header"><span>CASE REPORT <strong>001</strong></span><span class="case-indicator" id="case-status">UNFILED</span></div>
+          <div class="case-body"><div class="case-sigil" aria-hidden="true">◇ <span>369</span></div><p class="case-overline" id="case-overline">WELCOME, UNLISTED VISITOR</p><h2 id="case-heading">The doors have opened.</h2><p id="case-text" class="case-text" aria-live="polite">A receptionist stares at an empty registration screen. The clock counts backward. Somewhere nearby, an old machine makes three dull knocks.</p><div class="evidence-heading"><span>EVIDENCE RECOVERED</span><strong id="evidence-count">0 / 3</strong></div><div class="evidence-meter" role="progressbar" id="evidence-meter" aria-label="Required evidence recovered" aria-valuemin="0" aria-valuemax="3" aria-valuenow="0"><span id="evidence-fill"></span></div><ol class="evidence-list" id="evidence-list"><li>Arrival registry <span>UNKNOWN</span></li><li>Building directory <span>UNKNOWN</span></li><li>Pneumatic dispatch <span>UNKNOWN</span></li></ol></div>
+          <div id="decision-area" class="decision-area" hidden><h3 id="decision-heading">Authorization Required</h3><p>The forbidden elevator is calling. What do you do with what you've learned?</p><button type="button" data-choice="follow" class="choice-button primary-choice">Follow the knocking <span aria-hidden="true">↗</span></button><button type="button" data-choice="report" class="choice-button">File the anomaly report <span aria-hidden="true">↗</span></button></div>
+          <div id="ending-area" class="ending-area" hidden><span>ENTRY RECORDED</span><strong id="ending-title"></strong><p id="ending-text"></p><p class="ending-note">The rest of the building is still waiting.</p></div>
+          <div class="panel-footer" id="save-status">LOCAL RECORD · UNSAVED</div>
+        </section>
+      </div>
+      <section class="footer-note"><span>THE DEPARTMENT OF EVERYTHING</span><p>“Managing existence since before existence was authorized.”</p><a href="./trinity.html">PLAY THE WALBASH AVENUE JOB ↗</a><a href="https://github.com/MichaelWave369/ElsewhereEngine" target="_blank" rel="noopener noreferrer">VIEW SOURCE ↗</a></section>
+    </main>
+    <aside id="journal" class="journal" aria-labelledby="journal-title" hidden><div class="journal-header"><div><span>FIELD RECORDS / INTAKE</span><h2 id="journal-title">Observation Journal</h2></div><button id="journal-close" class="journal-close" type="button" aria-label="Close journal">×</button></div><p>Records are saved in this browser only. No files are transmitted.</p><ol id="journal-entries"></ol><div class="journal-bottom" id="journal-bottom">Observation status: open.</div></aside>
+    <footer class="site-footer">© Φ369 LABS · ELSEWHERE ENGINE · ORIGINAL UNIVERSE <span>BUILD 0.1 · AN UNSCHEDULED ARRIVAL</span></footer>
+  </div>
+</body>
+</html>
