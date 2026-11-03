@@ -1,0 +1,50 @@
+name: Publish Elsewhere Engine to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Package only the static playable site
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist/src
+          cp index.html trinity.html styles.css trinity.css dist/
+          cp src/*.mjs dist/src/
+          touch dist/.nojekyll
+          test -s dist/index.html
+          test -s dist/trinity.html
+          test -s dist/src/engine.mjs
+          test -s dist/src/trinity-story.mjs
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
