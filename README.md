@@ -25,6 +25,17 @@ Open **[The Walbash Avenue Job](./trinity.html)** for a second, independent offl
 - Choose one of two distinct endings; use **New Work Order** to restart only this episode.
 - See [The Unlicensed Trinity's character and story bible](docs/TRINITY.md). The possible TweedleVerse connection is a *proposal*, not an installed integration.
 
+## GitHub Pages publishing
+
+The main game and the companion episode are static pages. **Passing the `Checks` workflow does not publish the site.** A separate `Publish Elsewhere Engine to GitHub Pages` workflow deploys the static files from `main` after the repository owner selects **Settings → Pages → Build and deployment → Source: GitHub Actions** (one-time setup).
+
+After the publish workflow succeeds, the expected paths are:
+
+- Main investigation: https://michaelwave369.github.io/ElsewhereEngine/
+- The Walbash Avenue Job: https://michaelwave369.github.io/ElsewhereEngine/trinity.html
+
+Treat these as **expected paths, not a live-site verification** until GitHub Pages shows a successful deployment and the URLs open. For 404s, check the Pages setting and the `Publish Elsewhere Engine` workflow, not merely green unit tests. The static artifact includes the root HTML, both stylesheets, and JavaScript modules, with no build dependencies or backend.
+
 ## Design boundaries
 
 - **This is a first playable vertical slice**, not a production-ready engine or a completed twelve-realm campaign.
