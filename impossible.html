@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#12101d">
+  <meta name="description" content="The First Stair: an original surreal, offline-playable journey through impossible architecture, dream logic and fractured perspective.">
+  <title>Elsewhere Engine | The First Stair</title>
+  <link rel="stylesheet" href="./impossible.css">
+  <script type="module" src="./src/impossible-app.mjs"></script>
+</head>
+<body data-stage="stair">
+<a class="skip" href="#controls">Skip to room actions</a>
+<div class="shell">
+  <header class="header">
+    <a class="brand" href="./index.html"><span class="sigil" aria-hidden="true">Φ</span><span><small>Φ369 LABS / THE CROSSROADS</small><strong>ELSEWHERE<span>ENGINE</span></strong></span></a>
+    <nav aria-label="Episode navigation"><a href="./index.html">Reception hall</a><a href="./trinity.html">Walbash Avenue</a></nav>
+  </header>
+  <main>
+    <div class="introduction"><p class="kicker">THE ARCHIVE OF IMPOSSIBILITIES · EPISODE EXPERIMENT 003</p><h1>The First <em>Stair</em></h1><p class="subtitle">A journey through structure, dream and perception. Three ways of seeing. One doorway that refuses to stay put.</p></div>
+    <div class="experience">
+      <section class="gallery-frame" aria-label="Abstract illustration of the current impossible room">
+        <div class="scene" id="gallery-scene" data-perspective="front">
+          <svg viewBox="0 0 960 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="art-title art-description" preserveAspectRatio="xMidYMid slice">
+            <title id="art-title">The transforming impossible gallery</title>
+            <desc id="art-description">Original geometric artwork changes from looping stairways to a dream desert, a fractured portrait and their synthesis as you progress.</desc>
+            <defs>
+              <linearGradient id="night" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#15152b"/><stop offset=".55" stop-color="#353253"/><stop offset="1" stop-color="#d59073"/></linearGradient>
+              <linearGradient id="dune" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#281b40"/><stop offset=".58" stop-color="#bc6e77"/><stop offset="1" stop-color="#eebf8c"/></linearGradient>
+              <linearGradient id="facets" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f3c994"/><stop offset=".45" stop-color="#8e879e"/><stop offset="1" stop-color="#4a637b"/></linearGradient>
+            </defs>
+            <g class="art art-stair">
+              <rect width="960" height="560" fill="url(#night)"/>
+              <circle cx="755" cy="120" r="110" fill="#e4b28d" opacity=".37"/>
+              <path d="M0 465L455 182 900 470M0 300L355 80 960 365" fill="none" stroke="#e0c5ae" stroke-opacity=".22" stroke-width="3"/>
+              <g class="architecture" stroke="#18172b" stroke-width="4">
+                <path d="M124 413L376 266 593 388 340 535Z" fill="#a18fa5"/>
+                <path d="M376 266L376 146 593 269 593 388Z" fill="#5b5376"/>
+                <path d="M124 413L124 285 376 146 376 266Z" fill="#d4b3ad"/>
+                <path d="M340 535L340 412 593 269 593 388Z" fill="#6e6381"/>
+                <path d="M340 412L593 269 793 383 540 524Z" fill="#c4a6af"/>
+                <path d="M593 269L593 142 793 256 793 383Z" fill="#635977"/>
+                <path d="M540 524L540 397 793 256 793 383Z" fill="#8c7891"/>
+                <path d="M124 286L376 146 593 269 340 410Z" fill="#dfc8b6"/>
+              </g>
+              <g class="treads" stroke="#29253d" stroke-width="3" fill="none">
+                <path d="M145 301l207 118m-166-140l206 118m-165-140l206 118m-165-140l206 118m-164-140l205 118"/>
+                <path d="M363 429l250-143m-206 167l250-143m-205 167l250-143m-205 166l250-143"/>
+                <path d="M365 159l0 236m47-209v183m49-157v184m49-157v184"/>
+              </g>
+              <path d="M660 135v110h72V135Z" fill="#101526" stroke="#d9b395" stroke-width="8"/><path d="M700 156v65" stroke="#b5d5d2" stroke-width="5"/>
+              <circle cx="702" cy="180" r="9" fill="#a6e4d1"/>
+              <text x="82" y="100" fill="#f2dbb7" font-size="15" letter-spacing="7">THE STAIR</text>
+            </g>
+            <g class="art art-dream">
+              <rect width="960" height="560" fill="url(#dune)"/>
+              <circle cx="720" cy="174" r="105" fill="#f5d5a4" opacity=".85"/>
+              <path d="M0 382Q260 297 480 389T960 361V560H0Z" fill="#b87c83"/><path d="M0 447Q270 373 520 458T960 418V560H0Z" fill="#74556c"/>
+              <path d="M460 88Q528 42 579 92Q625 145 588 207Q573 236 589 270Q602 315 562 359Q532 387 514 337Q503 295 521 264Q475 245 448 190Q421 134 460 88Z" fill="#e6c8b8" stroke="#4f3d5d" stroke-width="9"/>
+              <circle cx="523" cy="151" r="58" fill="none" stroke="#674e67" stroke-width="5"/><path d="M523 107v44l35 21" fill="none" stroke="#674e67" stroke-width="6" stroke-linecap="round"/>
+              <path d="M175 405L279 329 348 408" fill="none" stroke="#39263c" stroke-width="7"/><ellipse cx="279" cy="413" rx="152" ry="27" fill="#362a48" opacity=".6"/>
+              <ellipse cx="275" cy="352" rx="28" ry="55" fill="#a6d5c6"/><path d="M274 396V296" stroke="#4c6b67" stroke-width="8"/>
+              <text x="85" y="99" fill="#f9dfc5" font-size="15" letter-spacing="7">THE DREAM</text>
+            </g>
+            <g class="art art-prism">
+              <rect width="960" height="560" fill="#25283c"/>
+              <path d="M0 0L390 0 250 560H0Z" fill="#7b6c83"/><path d="M960 0L576 0 725 560h235Z" fill="#d39b83"/>
+              <g class="portrait" stroke="#25283c" stroke-width="10" stroke-linejoin="round">
+                <path d="M391 78L565 71 680 183 627 368 510 481 346 408 300 216Z" fill="url(#facets)"/>
+                <path d="M391 78L464 252 300 216Z" fill="#f4c998"/>
+                <path d="M565 71L464 252 391 78Z" fill="#8c9fb3"/>
+                <path d="M565 71L680 183 464 252Z" fill="#d8b09e"/>
+                <path d="M300 216L464 252 346 408Z" fill="#9db5b9"/>
+                <path d="M680 183L627 368 464 252Z" fill="#6f6a8a"/>
+                <path d="M346 408L464 252 510 481Z" fill="#d5a47f"/>
+                <path d="M464 252L627 368 510 481Z" fill="#a0b0ae"/>
+              </g>
+              <path d="M385 240l53-24-14 43-42-3m165-8l57 11-52 26m-108 49l51 9-24 26-30-20" fill="none" stroke="#26263f" stroke-width="11" stroke-linejoin="round"/>
+              <path d="M180 110l75 138-88 110M763 99l-95 171 100 152" fill="none" stroke="#e9cfa7" stroke-opacity=".5" stroke-width="12"/>
+              <text x="85" y="99" fill="#fff0d2" font-size="15" letter-spacing="7">THE PORTRAIT</text>
+            </g>
+            <g class="art art-synthesis">
+              <rect width="960" height="560" fill="url(#night)"/>
+              <circle cx="470" cy="280" r="207" fill="none" stroke="#e2b69e" stroke-width="2" stroke-dasharray="12 14"/>
+              <circle cx="470" cy="280" r="150" fill="#997b91" opacity=".24"/>
+              <path d="M152 410l210-122 187 108-211 124Z" fill="#dfb9a4" stroke="#25253b" stroke-width="10"/>
+              <path d="M338 520V392l211-123v127Z" fill="#665b82" stroke="#25253b" stroke-width="10"/>
+              <path d="M362 288l211-120 187 108-211 120Z" fill="#ceb5b3" stroke="#25253b" stroke-width="10"/>
+              <path d="M573 168v-60l187 108v60Z" fill="#716685"/>
+              <path d="M470 135Q540 105 562 174Q589 236 534 289L480 365 423 267Q393 212 421 162Q436 139 470 135Z" fill="#e2c0ac" stroke="#3a3457" stroke-width="7"/>
+              <path d="M445 208l34-22 14 23-40 12m64-20l24 13-16 22" stroke="#3a3457" fill="none" stroke-width="9"/>
+              <circle cx="470" cy="280" r="23" fill="#b9ded0" opacity=".8"/>
+              <text x="85" y="99" fill="#f4dfc9" font-size="15" letter-spacing="7">THE SYNTHESIS</text>
+            </g>
+          </svg>
+          <div class="scene-label"><span>ARCHIVE / UNMAPPED ROOM</span><span>NO SINGLE VIEW IS COMPLETE</span></div>
+        </div>
+        <div class="progress"><span>JOURNEY RECORD</span><div class="progress-track" id="progressbar" role="progressbar" aria-label="Rooms completed" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0"><span id="progress-meter"></span></div><strong id="progress-count">0 / 4</strong></div>
+        <ol class="rooms" aria-label="Journey chapters"><li data-room="stair">I · Structure</li><li data-room="dream">II · Dream</li><li data-room="prism">III · Perspective</li><li data-room="synthesis">IV · Synthesis</li></ol>
+      </section>
+      <section class="case" id="controls" aria-labelledby="stage-title">
+        <div class="case-top"><span id="stage-eyebrow">ROOM 01 / 04</span><span class="badge">UNCLASSIFIED</span></div>
+        <h2 id="stage-title">The stair with no final step</h2>
+        <p id="stage-story">The climb leads back to the same landing. Perhaps the exit is not above you.</p>
+        <p class="feedback" id="feedback" role="status" aria-live="polite">Choose an action to investigate the room.</p>
+        <h3>YOUR ACTIONS</h3><div class="actions" id="actions"></div>
+        <h3>FIELD JOURNAL</h3><ul class="journal" id="journal"><li>No observations recorded yet.</li></ul>
+        <div class="case-bottom"><button type="button" id="reset">Restart this journey</button><small id="save-status">LOCAL JOURNEY · SAVED IN THIS BROWSER</small></div>
+      </section>
+    </div>
+    <p class="ethos">An original playable exploration of paradoxical geometry, dream symbolism and multiple perspectives. Inspired by artistic ideas, not a recreation of existing artworks.</p>
+  </main>
+  <footer>Φ369 LABS · PEOPLE ABOVE PROFIT · LEDGER ABOVE EGO <span>ELSEWHERE ENGINE / ARCHIVE EXPERIMENT</span></footer>
+</div>
+</body>
+</html>

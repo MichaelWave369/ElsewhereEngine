@@ -18,6 +18,15 @@
 - [ ] Manual smoke test on desktop, mobile and Quest browser after merge.
 - [ ] Any cross-repository TweedleVerse bridge requires separate review and opt-in; do not imply it is implemented.
 
+## Archive experiment: The First Stair (independent slice)
+
+- [x] Independent four-room 2D browser journey: structure, dream, perspective, synthesis.
+- [x] Meaningful puzzle gates, distinct endings and local-only save, separate from arrival and Walbash.
+- [x] Original SVG artwork, keyboard-operable buttons and a journal with screen-reader feedback.
+- [x] Automated state tests and GitHub Pages packaging.
+- [ ] Manual browser verification on desktop, mobile and Quest browser.
+- [ ] True 3D impossible-space navigation and WebXR: **future rungs**, not shipped.
+
 ## Rung 1: The Crossroads proper
 - Multi-room transit concourse and a first complete investigation chain.
 - Character conversations with meaningful choices, not text dumps.

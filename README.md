@@ -25,6 +25,10 @@ Open **[The Walbash Avenue Job](./trinity.html)** for a second, independent offl
 - Choose one of two distinct endings; use **New Work Order** to restart only this episode.
 - See [The Unlicensed Trinity's character and story bible](docs/TRINITY.md). The possible TweedleVerse connection is a *proposal*, not an installed integration.
 
+## Play: The First Stair — Archive Experiment 003
+
+Open **[The First Stair](./impossible.html)** to explore an original four-room surreal gallery within the Archive of Impossibilities. Climb a looping staircase and change viewpoints, awaken a symbolic dream garden, reconcile three fractured portrait angles, then choose between two endings. This is a fully playable **2D browser episode**, not a 3D/VR build yet. Its journal and local save (`elsewhere-engine.first-stair.v1`) are independent of the other two games. No assets, calls or accounts are required. See [design and upgrade plan](docs/FIRST_STAIR.md).
+
 ## GitHub Pages publishing
 
 The main game and the companion episode are static pages. **Passing the `Checks` workflow does not publish the site.** A separate `Publish Elsewhere Engine to GitHub Pages` workflow deploys the static files from `main` after the repository owner selects **Settings → Pages → Build and deployment → Source: GitHub Actions** (one-time setup).
@@ -33,8 +37,9 @@ After the publish workflow succeeds, the expected paths are:
 
 - Main investigation: https://michaelwave369.github.io/ElsewhereEngine/
 - The Walbash Avenue Job: https://michaelwave369.github.io/ElsewhereEngine/trinity.html
+- The First Stair: https://michaelwave369.github.io/ElsewhereEngine/impossible.html
 
-Treat these as **expected paths, not a live-site verification** until GitHub Pages shows a successful deployment and the URLs open. For 404s, check the Pages setting and the `Publish Elsewhere Engine` workflow, not merely green unit tests. The static artifact includes the root HTML, both stylesheets, and JavaScript modules, with no build dependencies or backend.
+Treat these as **expected paths, not a live-site verification** until GitHub Pages shows a successful deployment and the URLs open. For 404s, check the Pages setting and the `Publish Elsewhere Engine` workflow, not merely green unit tests. The static artifact includes the root HTML, all stylesheets, and JavaScript modules, with no build dependencies or backend.
 
 ## Design boundaries
 
@@ -55,6 +60,8 @@ Treat these as **expected paths, not a live-site verification** until GitHub Pag
 - `tests/engine.test.mjs`, `tests/trinity.test.mjs`: Node built-in test runner.
 - `trinity.html`, `trinity.css`, `src/trinity-app.mjs`, `src/trinity-story.mjs`: independent playable maintenance episode.
 - `docs/TRINITY.md`: crew, character constraints, magic consequences and crossover boundaries.
+- `impossible.html`, `impossible.css`, `src/impossible-app.mjs`, `src/impossible-story.mjs`: original surreal gallery game.
+- `docs/FIRST_STAIR.md`, `tests/impossible.test.mjs`: gallery design, roadmap and state tests.
 
 Run automated checks with Node.js 20 or later:
 
