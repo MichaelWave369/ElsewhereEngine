@@ -6,7 +6,7 @@
   "description": "A local-first, browser-playable multiverse mystery",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check src/engine.mjs && node --check src/app.mjs && node --check src/trinity-story.mjs && node --check src/trinity-app.mjs && node --check src/impossible-story.mjs && node --check src/impossible-app.mjs"
+    "check": "node --check src/engine.mjs && node --check src/app.mjs && node --check src/trinity-story.mjs && node --check src/trinity-app.mjs && node --check src/impossible-story.mjs && node --check src/impossible-app.mjs && node --check src/stairwalk-engine.mjs && node --check src/stairwalk-app.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#12101d">
+<meta name="description" content="Explore a looping staircase in a standalone 3D WebGL prototype inside Elsewhere Engine.">
+<title>Elsewhere Engine | The First Stair, Walkable Lab</title>
+<link rel="stylesheet" href="./stairwalk.css">
+<script type="module" src="./src/stairwalk-app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#motion">Skip 3D viewport and use movement controls</a>
+<div class="shell">
+<header><a href="./impossible.html" class="back">← THE FIRST STAIR / ILLUSTRATED GALLERY</a><span>Φ369 LABS · ARCHIVE EXPERIMENT 003</span></header>
+<main>
+<div class="intro"><p>EXPERIMENTAL 3D ANNEX / STRUCTURE</p><h1>The Stair That <em>Returns</em></h1><p>Climb the stair. Witness the repeating landing. Then look for the exit that was not there before.</p></div>
+<div class="layout">
+<section class="visual" aria-label="First-person 3D staircase exploration">
+<div class="viewport-wrap"><canvas id="viewport" width="960" height="600" aria-label="Walkable first-person 3D staircase. Navigate using keyboard, drag to turn, or use the labeled buttons.">Your browser requires WebGL for this view. The illustrated gallery is still available.</canvas><div class="reticle" aria-hidden="true">+</div></div>
+<div id="unavailable" class="unavailable" hidden><strong>3D unavailable on this device.</strong><p>Use the <a href="./impossible.html">illustrated four-room gallery</a> instead.</p></div>
+<div class="hud"><span>LOOPS WITNESSED <strong id="loop-count">0</strong></span><span>BEARING <strong id="heading">0°</strong></span></div>
+</section>
+<section class="panel">
+<div class="panel-title"><span>FIELD NOTE / 3D.01</span><strong>NO WORLD MAP IS AUTHORITATIVE</strong></div>
+<h2>Walk the contradiction</h2>
+<p>The stairs climb normally. At the far threshold, the engine discreetly moves you to the starting landing. This is a spatial illusion, not impossible physics.</p>
+<p id="narration" role="status" aria-live="polite" class="narration">Move forward to approach the steps. You can turn with the arrow keys or by dragging the scene.</p>
+<div class="info">SIDE EXIT <strong id="exit-state">HIDDEN / WALK THE STAIR</strong></div>
+<section id="motion" aria-labelledby="controls-title"><h3 id="controls-title">Movement controls</h3><div class="controls">
+<button data-motion="turn" data-direction="-1" type="button">↶ Turn left</button>
+<button data-motion="forward" data-direction="1" type="button">↑ Forward</button>
+<button data-motion="turn" data-direction="1" type="button">↷ Turn right</button>
+<button data-motion="strafe" data-direction="-1" type="button">← Sidestep</button>
+<button data-motion="forward" data-direction="-1" type="button">↓ Backward</button>
+<button data-motion="strafe" data-direction="1" type="button">Sidestep →</button>
+</div></section>
+<p class="tip">Keyboard: W/S move · A/D sidestep · Q/E or ←/→ turn · drag the scene to look around. Hold buttons to move, or tap for a small step. No forced camera motion or pointer lock.</p>
+<div id="finish" class="finish" hidden><h3>THE SIDE DOOR</h3><p>You escaped the staircase, but the dream is still waiting.</p><a href="./impossible.html">Continue to the illustrated four-act gallery →</a></div>
+<div class="bottom"><button type="button" id="reset">Restart 3D annex</button><span id="save-status">CHECKPOINTS STORED IN THIS BROWSER</span></div>
+</section>
+</div>
+<p class="footnote">Native WebGL · Original procedural geometry · Local-only checkpoint · This is a desktop/mobile first-person prototype, not a Quest WebXR build. Four-act story remains independently playable.</p>
+</main>
+<footer>ELSEWHERE ENGINE · ARCHIVE OF IMPOSSIBILITIES <span>STRUCTURE / DREAM / PERSPECTIVE</span></footer>
+</div>
+</body>
+</html>

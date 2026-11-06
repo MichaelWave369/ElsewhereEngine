@@ -1,6 +1,6 @@
 # Archive Experiment 003: The First Stair
 
-**Status:** First playable *browser* vertical slice; not 3D or VR. This is an original surreal episode inside Elsewhere Engine, accessible from the Crossroads without changing existing episode canon or save data.
+**Status:** The illustrated four-act journey is 2D and independently playable. A separate optional native-WebGL first-person 3D staircase annex is now prototyped; **neither experience supports WebXR yet**. This is an original surreal episode inside Elsewhere Engine, accessible from the Crossroads without changing existing episode canon or save data.
 
 ## Premise
 
@@ -23,10 +23,20 @@ This is **not** a reproduction of any existing painting, its specific compositio
 - Accessible semantic action buttons, keyboard focus, text-based clues, screen-reader status and reduced-motion styling.
 - CI: `npm run check` and `npm test`. Also test manually on desktop, mobile and Quest browser before declaring this production-ready.
 
+## Walkable 3D annex (experimental)
+
+- Path: `stairwalk.html`; separate CSS, app controller and pure movement/portal engine.
+- Real navigable WebGL geometry: corridor, twelve graduated steps, portal threshold and side passage. The paradox uses a deterministic camera-position transform at the far doorway: no violations of physical geometry.
+- Controls: W/S, A/D, Q/E or arrow keys, pointer drag and visible press-or-tap buttons. No pointer lock, external libraries or network dependency.
+- Portal is traversable before side door appears; after witnessing a loop, a side exit unlocks.
+- Separate checkpoint `elsewhere-engine.stairwalk.v1`, independent of the four-act gallery and other games. Reload restores loop count and unlocked exit at starting landing; it does not save continuous camera coordinates.
+- Testable pure motion, boundary and reset logic. The rendered WebGL output still needs manual acceptance on desktop/mobile/Quest Browser.
+- WebGL-unavailable devices receive a link back to the illustrated game; the 3D view itself has no full nonvisual equivalent.
+
 ## Subsequent rungs
 
 1. Improve room visuals and add accessible direction/perspective cues, sound optional.
-2. Replace 2D view transitions with a true 3D navigable room. Use seamless portal/reorientation transforms, not actual inconsistent world geometry.
+2. Expand the experimental walkable stair annex into an interconnected 3D journey with a more seamless masked portal, perspective cues and independently tested collisions. The first annex currently uses a direct reposition at a threshold.
 3. Add first-person and Quest 3 WebXR controls with hand-tracked fallback and safe locomotion.
 4. Add comfort settings: snap turning, seated mode, stationary mode, teleportation and no forced camera movement.
 5. Author a deeper narrative bridge to the Archive with an opt-in canon contract. No other repository's saves or secrets are read.

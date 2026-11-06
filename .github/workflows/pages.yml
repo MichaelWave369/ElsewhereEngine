@@ -29,12 +29,14 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p dist/src
-          cp index.html trinity.html impossible.html styles.css trinity.css impossible.css dist/
+          cp index.html trinity.html impossible.html stairwalk.html styles.css trinity.css impossible.css stairwalk.css dist/
           cp src/*.mjs dist/src/
           touch dist/.nojekyll
           test -s dist/index.html
           test -s dist/trinity.html
           test -s dist/impossible.html
+          test -s dist/stairwalk.html
+          test -s dist/src/stairwalk-engine.mjs
           test -s dist/src/impossible-story.mjs
           test -s dist/src/engine.mjs
           test -s dist/src/trinity-story.mjs
