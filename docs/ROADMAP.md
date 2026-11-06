@@ -25,7 +25,10 @@
 - [x] Original SVG artwork, keyboard-operable buttons and a journal with screen-reader feedback.
 - [x] Automated state tests and GitHub Pages packaging.
 - [ ] Manual browser verification on desktop, mobile and Quest browser.
-- [ ] True 3D impossible-space navigation and WebXR: **future rungs**, not shipped.
+- [x] Optional native-WebGL 3D stair annex: physical steps, first-person navigation and repeatable portal teleport.
+- [x] Exit unlocked by witnessing the loop; independent checkpoint, input tests and fallback link.
+- [ ] Manual desktop/mobile/Quest browser acceptance of WebGL view and controls.
+- [ ] Seamless portal mask, multi-room 3D dream/perspective transitions, WebXR and comfort features are future work.
 
 ## Rung 1: The Crossroads proper
 - Multi-room transit concourse and a first complete investigation chain.

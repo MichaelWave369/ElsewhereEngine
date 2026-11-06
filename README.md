@@ -29,6 +29,10 @@ Open **[The Walbash Avenue Job](./trinity.html)** for a second, independent offl
 
 Open **[The First Stair](./impossible.html)** to explore an original four-room surreal gallery within the Archive of Impossibilities. Climb a looping staircase and change viewpoints, awaken a symbolic dream garden, reconcile three fractured portrait angles, then choose between two endings. This is a fully playable **2D browser episode**, not a 3D/VR build yet. Its journal and local save (`elsewhere-engine.first-stair.v1`) are independent of the other two games. No assets, calls or accounts are required. See [design and upgrade plan](docs/FIRST_STAIR.md).
 
+## Walkable 3D annex: The Stair That Returns
+
+Open **[the native WebGL stair lab](./stairwalk.html)** for an optional first-person 3D proof of the looping staircase. Use W/S (forward/back), A/D (sidestep), Q/E or arrow keys (turn), pointer drag or on-screen controls. Cross the far threshold to return to the first landing, then discover the side exit. This is actual navigable 3D geometry with a deterministic portal repositioning trick, **not WebXR**, not a physically impossible continuous staircase, and not yet integrated into the narrative four-act save. Checkpoints (`elsewhere-engine.stairwalk.v1`) are isolated and the original illustrated game remains the accessible fallback. See [technical notes](docs/FIRST_STAIR.md).
+
 ## GitHub Pages publishing
 
 The main game and the companion episode are static pages. **Passing the `Checks` workflow does not publish the site.** A separate `Publish Elsewhere Engine to GitHub Pages` workflow deploys the static files from `main` after the repository owner selects **Settings → Pages → Build and deployment → Source: GitHub Actions** (one-time setup).
@@ -38,6 +42,7 @@ After the publish workflow succeeds, the expected paths are:
 - Main investigation: https://michaelwave369.github.io/ElsewhereEngine/
 - The Walbash Avenue Job: https://michaelwave369.github.io/ElsewhereEngine/trinity.html
 - The First Stair: https://michaelwave369.github.io/ElsewhereEngine/impossible.html
+- The 3D stair annex: https://michaelwave369.github.io/ElsewhereEngine/stairwalk.html
 
 Treat these as **expected paths, not a live-site verification** until GitHub Pages shows a successful deployment and the URLs open. For 404s, check the Pages setting and the `Publish Elsewhere Engine` workflow, not merely green unit tests. The static artifact includes the root HTML, all stylesheets, and JavaScript modules, with no build dependencies or backend.
 
@@ -62,6 +67,7 @@ Treat these as **expected paths, not a live-site verification** until GitHub Pag
 - `docs/TRINITY.md`: crew, character constraints, magic consequences and crossover boundaries.
 - `impossible.html`, `impossible.css`, `src/impossible-app.mjs`, `src/impossible-story.mjs`: original surreal gallery game.
 - `docs/FIRST_STAIR.md`, `tests/impossible.test.mjs`: gallery design, roadmap and state tests.
+- `stairwalk.html`, `stairwalk.css`, `src/stairwalk-app.mjs`, `src/stairwalk-engine.mjs`, `tests/stairwalk.test.mjs`: optional native-WebGL walkable-stair annex and portal rules.
 
 Run automated checks with Node.js 20 or later:
 
